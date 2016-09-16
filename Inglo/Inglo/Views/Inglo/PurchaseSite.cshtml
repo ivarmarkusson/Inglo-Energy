@@ -1,0 +1,45 @@
+﻿@model Inglo.Models.ViewModels.OrderViewModel
+
+@{
+    ViewBag.Title = "PurchaseSite";
+}
+
+<h2>Your Order</h2>
+
+<table class="table-responsive">
+    <tr>
+       <th>Product Name</th>
+        <th>Price(Each)</th>
+        <th>Quantity</th>
+        <th>Price</th> 
+    </tr>
+    @{/* --- TODO ----
+        foreach (var item in Model)
+        {
+            @Html.Raw("<tr>")
+
+                @Html.Raw("<td>") 
+                    @Html.DisplayFor(modelItem => item.Name)
+                @Html.Raw("</td>")
+
+                @Html.Raw("<td>")
+                    @Html.DisplayFor(modelItem => item.Price)
+                @Html.Raw("</td>")
+
+
+                @Html.Raw("<td>")
+                   //TODO
+                @Html.Raw("</td>")
+
+
+                @Html.Raw("<td>")
+                    //TODo 
+                @Html.Raw("</td>")
+
+            @Html.Raw("</tr>")
+        }
+     */}
+
+</table>
+
+<label>Total Price: </label>

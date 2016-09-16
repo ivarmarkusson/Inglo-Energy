@@ -1,0 +1,38 @@
+﻿@model List<Inglo.Models.ProductViewModel>
+@{
+    ViewBag.Title = "Products";
+}
+
+<h2>Products</h2>
+
+<div class="container">
+
+
+    @{ 
+
+        int counter = 3; 
+    
+        foreach (var item in Model)
+        {
+            if(counter % 3 == 0)
+            {
+                @Html.Raw("<div class=\"row\">")
+            }
+
+            @Html.Raw("<div class=\"col-sm-4\">")
+                <p>@Html.DisplayFor(modelItem => item.Name)</p>
+                <a href="~/Inglo/Necklece"><img src="~/Content/Images/halsmen.jpg" /></a>
+                @Html.Raw("<br />")
+                @Html.ActionLink("Click Here", "SaleSide", new { ID = item.ID })
+            @Html.Raw("</div>")
+
+            if (counter % 3 == 2)
+            {
+                @Html.Raw("<div class=\"row\">")
+            }
+                
+            counter++;
+        }
+    }    
+
+</div>

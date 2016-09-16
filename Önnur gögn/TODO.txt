@@ -1,0 +1,16 @@
+To Do:
+
+* Forsíða
+	-vinsælustu vörurnar
+
+* Bakendi
+	-Admin aðgangur
+		*Geta bæt við vöru
+	-SQL gagngagrunnur
+
+* Vörusíða
+	-lista vörum úr gagnagrunni upp
+	-Buy button sem er tengdur við paypal
+
+	
+
